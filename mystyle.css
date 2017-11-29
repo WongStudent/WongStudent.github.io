@@ -16,3 +16,23 @@ h3 {
     border-style: outset;
     border-color: honeydew;
 }
+img src {
+    border-style: outset;
+    text-align: center;
+}
+.gifs {
+    padding-left: 55px;
+}
+
+.text {
+    text-align: center
+}
+
+.align {
+    padding-left: 7px;
+}
+
+.Home {
+    text-align: center;
+    color: Cyan;
+}
