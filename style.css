@@ -23,6 +23,28 @@ body{
     color:white;
 }
 
+.home {
+    text-transform:none;
+}
+
+.dark {
+    padding:15px;
+    background:honeydew;
+    color:black;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.want-button{
+    height:38px;
+    background:Navajowhite;
+    border:0;
+    padding-left:10px;
+    padding-right:10px;
+    color:white;
+    cursor:pointer;
+}
+
 /* Header */
 header {
     background:BurlyWood;
@@ -176,6 +198,7 @@ footer{
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
+
     display: inline-block;
 }
 
@@ -186,7 +209,7 @@ footer{
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 9999;
+    z-index: 99999;
 }
 
 /* Links inside the dropdown */
@@ -196,6 +219,7 @@ footer{
     text-decoration: none;
     display: block;
     background-color:honeydew;
+    font-size:15px;
 }
 
 /* Change color of dropdown links on hover */
@@ -216,15 +240,23 @@ footer{
 /* Pomsky */
 #Pomsky_Page {
     font-size:40px;
+    margin-top:20px;
+}
+
+#main-col {
+    margin:0;
+    padding:30px;
+    float:left;
+    width:60%;
+}
+
+#sidebar {
+    float:right;
+    width:30%;
     margin-top:10px;
 }
 
-#picture_box {
-    margin:0;
-    padding:30px;
-    
-}
-
-.home {
-    text-transform:none;
+#sidebar .quote input, #sidebar .quote textarea{
+    width:90%;
+    padding:5px;
 }
