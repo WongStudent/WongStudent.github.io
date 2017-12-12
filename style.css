@@ -1,3 +1,4 @@
+/*Font and Background*/
 body{
     font-family:Comic Sans MS, cursive, sans-serif;
     font-size:20px;
@@ -7,7 +8,7 @@ body{
     margin:0;
     background-color:Bisque;
 }
-/* Global */
+/* Global Classes */
 .container {
     width:80%;
     margin:auto;
@@ -21,6 +22,11 @@ body{
     padding-left:10px;
     padding-right:10px;
     color:white;
+}
+
+.button_1:hover {
+    outline-style:outset;
+    cursor:pointer;
 }
 
 .home {
@@ -43,6 +49,21 @@ body{
     padding-right:10px;
     color:white;
     cursor:pointer;
+}
+
+.want-button-1 {
+    height:38px;
+    background:Sienna;
+    border:0;
+    padding-left:10px;
+    padding-right:10px;
+    color:white;
+    cursor:pointer;
+}
+
+.want-button-1:hover {
+    outline-style:outset;
+    color:lightgoldenrodyellow;
 }
 
 /* Header */
@@ -156,10 +177,12 @@ header a:hover{
     width:90px;
 }
 
+/* Last Two Boxes in Index*/
+
 #boxes .box1{
     float:left;
     width:30%;
-    padding-left:120px;
+    padding-left:140px;
     padding-top:10px;
     text-align:center;
 }
@@ -237,7 +260,7 @@ footer{
     background-color: bisque;
 }
 
-/* Pomsky */
+/* Dog Pages */
 #Pomsky_Page {
     font-size:40px;
     margin-top:20px;
@@ -259,4 +282,61 @@ footer{
 #sidebar .quote input, #sidebar .quote textarea{
     width:90%;
     padding:5px;
+}
+
+/* Services */
+
+#services {
+    list-style:none;
+    padding:20px;
+    border:black solid 1px;
+    margin-bottom:5px;
+    background:Navajowhite;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    
+    article#main-col,
+    aside#sidebar{
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+    
+    #boxes .box1{
+        float:none;
+        text-align:center;
+        width:100%;
+        padding:10px;
+    }
+    
+    #boxes .box1 img{
+        width:90px;
+    }
+    
+    header{
+        padding-bottom:20px;
+    }
+    
+    #showcase h1{
+        margin-top:40px;
+    }
+    
+    #newsletter button, .quote button{
+        display:block;
+        width:100%;
+    }
+    
+    #newsletter form input[type="email"]{
+        width:100%;
+        margin-bottom:5px;
+    }
 }
