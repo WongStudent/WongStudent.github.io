@@ -310,6 +310,21 @@ footer{
     background:Navajowhite;
 }
 
+/* Projects Page */
+
+#main-col1 {
+    margin:0;
+    padding:30px;
+    float:left;
+    width:90%;
+}
+
+.more{
+    width:100px;
+    height:100px;
+    float:right;
+}
+
 /* Media Queries */
 
 @media(max-width: 768px){
@@ -319,7 +334,6 @@ footer{
     #newsletter h1,
     #newsletter form,
     #boxes .box,
-    
     article#main-col,
     aside#sidebar{
         float:none;
