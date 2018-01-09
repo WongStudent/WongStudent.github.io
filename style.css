@@ -44,11 +44,16 @@ body{
 .want-button{
     height:38px;
     background:Navajowhite;
-    border:0;
+    border:black 1px solid;
     padding-left:10px;
     padding-right:10px;
     color:white;
     cursor:pointer;
+}
+
+.want-button:hover{
+    outline-style:outset;
+    color:black;
 }
 
 .want-button-1 {
@@ -129,6 +134,11 @@ header a:hover{
     background:url("showcase1.jpg") no-repeat 0 -400px;
     text-align:center;
     color:moccasin;
+    z-index:-1;
+    border-bottom-width: 5px;
+    border-bottom-color: black;
+    
+    
 }
 
 #showcase h1{
@@ -262,8 +272,10 @@ footer{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: Sienna;
-    color:white;
+.dropdown-content a:hover {
+    color:sienna;
+    
+    transition: opacity .2s ease;
 }
 
 /* Show the dropdown menu on hover */
@@ -370,3 +382,25 @@ footer{
         margin-bottom:5px;
     }
 }
+
+/*Link button*/
+.link {
+    text-decoration:none;
+    color:black;
+}
+
+/*Javascript*/
+
+::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+::-webkit-scrollbar-track-piece  {
+background-color: cornsilk;
+}
+::-webkit-scrollbar-thumb:vertical {
+height: 30px;
+background-color: navajowhite;
+border:black solid 1px;
+}
+
